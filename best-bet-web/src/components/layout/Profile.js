@@ -14,7 +14,7 @@ class Profile extends Component{
                                 <div className="col-md-6 ml-auto mr-auto">
                                 <div className="profile">
                                         <div className="avatar">
-                                            <img src={profileImg} alt="Circle Image" className="img-raised rounded-circle img-fluid" />
+                                            <img src={profileImg} alt="Circle Profile" className="img-raised rounded-circle img-fluid" />
                                         </div>
                                         <div className="name">
                                             <h1 className="title">Iosif Dobos</h1>
@@ -30,22 +30,22 @@ class Profile extends Component{
                                     </div>
                                         <div className="col-12 social padding">
                                             
-                                            <a href="https://www.facebook.com/josephberelly" target="_blank" type="button">
+                                            <a href="https://www.facebook.com/josephberelly" target="_blank" rel="noopener noreferrer" type="button">
                                                 <i className="fab fa-facebook"></i>
                                             </a>
-                                            <a href="https://twitter.com/josephberelly" target="_blank" type="button">
+                                            <a href="https://twitter.com/josephberelly" target="_blank" rel="noopener noreferrer" type="button">
                                                 <i className="fab fa-twitter"></i>
                                             </a>
-                                            <a href="https://www.instagram.com/joseph_berelly/" target="_blank" type="button">
+                                            <a href="https://www.instagram.com/joseph_berelly/" target="_blank" rel="noopener noreferrer" type="button">
                                                 <i className="fab fa-instagram"> </i> 
                                             </a>
-                                            <a href="https://www.linkedin.com/in/iosif-dobos/" target="_blank" type="button">
+                                            <a href="https://www.linkedin.com/in/iosif-dobos/" target="_blank" rel="noopener noreferrer" type="button">
                                                 <i className="fab fa-linkedin-in"> </i>
                                             </a>
-                                            <a href="https://github.com/IosifDobos" target="_blank" type="button">
+                                            <a href="https://github.com/IosifDobos" target="_blank" rel="noopener noreferrer" type="button">
                                                 <i className="fab fa-github"> </i>
                                             </a>
-                                            <a href="https://medium.com/" target="_blank" type="button" >
+                                            <a href="https://medium.com/" target="_blank" rel="noopener noreferrer" type="button" >
                                                 <i className="fab fa-medium"> </i>
                                             </a>
                                             

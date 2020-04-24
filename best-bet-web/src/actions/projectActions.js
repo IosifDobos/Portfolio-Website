@@ -24,18 +24,19 @@ const createProject = project => (dispatch, getState, {getFirestore}) => {
 };
 export default createProject;
 
-const deleteProject =  project => (dispatch, getState, {getFirestore}) => {
-    console.log(project);
-    const firestore = getFirestore();
+// const deleteProject =  project => (dispatch, getState, {getFirestore}) => {
+//     console.log(project);
+//     const firestore = getFirestore();
 
-    firestore
-    .collection('projects')
-    .doc(project.id)
-    .delete()
-    .then( () => {
-        dispatch({type: 'DELETE_PROJECT', project});
-    })
-    .catch( (err) =>{
-        dispatch({type: "DELETE_PROJECT_ERROR", err});
-    });
-}
+//     firestore
+//     .collection('projects')
+//     .doc(project.id)
+//     .delete()
+//     .then( () => {
+//         dispatch({type: 'DELETE_PROJECT', project});
+//     })
+//     .catch( (err) =>{
+//         dispatch({type: "DELETE_PROJECT_ERROR", err});
+//     });
+// };
+// export default deleteProject;
