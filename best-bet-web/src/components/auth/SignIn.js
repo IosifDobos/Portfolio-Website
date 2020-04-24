@@ -57,27 +57,10 @@ class SignIn extends Component {
             return <Redirect to="/" />
         }
         return (
-            // <div className="container">
-            //     <form onSubmit={this.handleSubmit} className="white">
-            //         <h5 className="grey-text text-darken-3">Sign In</h5>
-            //         <div className="input-field">
-            //             <label htmlFor="email">Email</label>
-            //             <input type="email" id="email" onChange={this.handleChange} />    
-            //         </div>    
-            //         <div className="input-field">
-            //             <label htmlFor="password">Password</label>
-            //             <input type="password" id="password" onChange={this.handleChange} />    
-            //         </div>   
-            //         <div className="input-field">
-            //             <button type="submit" className="btn pink lighten-1 z-depth-0">Login</button> 
-            //             {authError ? <div className="red-text center"><p>{authError}</p></div> : null}
-            //         </div>   
-            //     </form>                
-            // </div>
             <div className="container">
-            <MDBContainer className="login-container">
+            <MDBContainer className="login-container justify-content-center ">
                 <MDBRow className="login-container">
-                    <MDBCol md="6">
+                    <MDBCol className="justify-content-center ">
                         <MDBCard>
                             <MDBCardBody>
                                 <MDBCardHeader className="form-header warm-flame-gradient rounded center">

@@ -27,7 +27,7 @@ class CreateProject extends Component {
         const {props, state} = this;
         props.createProject(state);
 
-        props.history.push('/dashboard');
+        props.history.push('/');
     }
 
     render() {

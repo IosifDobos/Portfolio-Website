@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import { compose } from 'redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { Redirect } from 'react-router-dom';
-import {Link} from 'react-router-dom';
 
 import Notifications from './Notifications';
 import ProjectList from '../projects/ProjectList';
@@ -14,6 +13,7 @@ class Dashboard extends Component {
     render() {
         
         const {posts, projects, notifications, auth} = this.props;
+        console.log(auth);
         // const postsList = posts.length ? (
         //     posts.map(post => {
         //         return (
@@ -83,7 +83,7 @@ class Dashboard extends Component {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://medium.com/@dhruv.barochia34788" target="_blank" type="button" className="btn-floating btn-medium" rel="noopener noreferrer">
+                                            <a href="https://medium.com/" target="_blank" type="button" className="btn-floating btn-medium" rel="noopener noreferrer">
                                             <i className="fab fa-medium"> </i>
                                             </a>
                                         </li>
@@ -155,5 +155,6 @@ export default compose(
     firestoreConnect([
         { collection: 'projects', orderBy: ['createdAt', 'desc'] },
         { collection: 'notifications', limit: 4, orderBy: ['time', 'desc']},
+        { collection: 'posts', limit: 5, orderBy: ['time', 'desc']},
     ])
 )(Dashboard);

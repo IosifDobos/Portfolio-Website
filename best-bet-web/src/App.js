@@ -16,6 +16,7 @@ import { compose } from 'redux';
 import { firebaseConnect } from 'react-redux-firebase';
 import { connect } from 'react-redux';
 import PostDetails from './components/posts/PostDetails';
+import Profile from './components/layout/Profile';
 
 class App extends Component {
 
@@ -37,6 +38,7 @@ class App extends Component {
                 <Route path='/contact' component={Contact} />
                 <Route path='/signin' component={SignIn} />
                 <Route path='/signup' component={SignUp} />
+                <Route path='/profile' component={Profile} />
                 <Route path='/create-project' component={CreateProject} />
                 <Route path='/create-post' component={CreatePost} />
                 {/* <Route path='/:any' component={Dashboard} /> */}

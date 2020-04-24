@@ -27,7 +27,7 @@ class CreatePost extends Component {
         const {props, state} = this;
         props.createPost(state);
 
-        props.history.push('/dashboard');
+        props.history.push('/');
     }
 
     render() {
